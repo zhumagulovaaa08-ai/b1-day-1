@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English with Mixlass - Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <!-- Header Section -->
+    <header class="text-center mb-10">
+        <h1 class="text-4xl md:text-5xl font-bold text-orange-500">English with Mixlass</h1>
+        <p class="text-xl md:text-2xl text-gray-700 mt-2">LEARN. SHARE. CONNECT</p>
+    </header>
+
+    <div class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-lg">
+        <h2 class="text-3xl font-bold mb-6 text-center">Practice</h2>
+        <p class="text-lg text-gray-600 mb-8 text-center">Complete the exercises to test your knowledge.</p>
+
+        <!-- Task 1: Complete the sentences with the Present Simple or Present Continuous form of the verbs in brackets. -->
+        <div id="task1" class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-orange-500">Task 1: Complete the sentences with the Present Simple or Present Continuous form of the verbs in brackets.</h3>
+            <form id="quizForm1" class="space-y-4">
+                <div class="space-y-2">
+                    <p class="text-gray-700">1. ________ you ________ with your parents at the moment? (live)</p>
+                    <input type="text" id="q1_part1_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="First verb">
+                    <input type="text" id="q1_part2_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="Second verb">
+                    <span id="result1_task1" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">2. ________ your partner ________ how to cook? (know)</p>
+                    <input type="text" id="q2_part1_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="First verb">
+                    <input type="text" id="q2_part2_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="Second verb">
+                    <span id="result2_task1" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">3. What song ________ you ________ to? I've never heard it before. (listen)</p>
+                    <input type="text" id="q3_part1_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="First verb">
+                    <input type="text" id="q3_part2_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="Second verb">
+                    <span id="result3_task1" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">4. How often ________ you ________ your family? (see)</p>
+                    <input type="text" id="q4_part1_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="First verb">
+                    <input type="text" id="q4_part2_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="Second verb">
+                    <span id="result4_task1" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">5. This month I ________ to finish this new project. (try)</p>
+                    <input type="text" id="q5_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer">
+                    <span id="result5_task1" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">6. When we go to Rome, we usually ________ with my sister. (stay)</p>
+                    <input type="text" id="q6_task1" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer">
+                    <span id="result6_task1" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 2: Add the expressions of frequency on the line according to how often they think they happen. -->
+        <div id="task2" class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-orange-500">Task 2: Add the expressions of frequency on the line according to how often they think they happen.</h3>
+            
+            <!-- Box with words -->
+            <div class="bg-gray-100 p-4 rounded-md border-2 border-dashed border-gray-300 mb-4 text-center">
+                <span class="inline-block mx-2 my-1">every day</span>
+                <span class="inline-block mx-2 my-1">every weekend</span>
+                <span class="inline-block mx-2 my-1">from time to time</span>
+                <span class="inline-block mx-2 my-1">hardly ever</span>
+                <span class="inline-block mx-2 my-1">once a month</span>
+                <span class="inline-block mx-2 my-1">once in a while</span>
+                <span class="inline-block mx-2 my-1">twice a year</span>
+            </div>
+
+            <p class="text-gray-600 mb-4">never ______________________________________________________________________________________ always</p>
+            <form id="quizForm2" class="space-y-4">
+                <div class="space-y-2">
+                    <p class="text-gray-700">Write the expressions in order from least frequent to most frequent.</p>
+                    <input type="text" id="q1_task2" class="border rounded-md p-2 mt-1 w-full" placeholder="Expression 1">
+                    <input type="text" id="q2_task2" class="border rounded-md p-2 mt-1 w-full" placeholder="Expression 2">
+                    <input type="text" id="q3_task2" class="border rounded-md p-2 mt-1 w-full" placeholder="Expression 3">
+                    <input type="text" id="q4_task2" class="border rounded-md p-2 mt-1 w-full" placeholder="Expression 4">
+                    <input type="text" id="q5_task2" class="border rounded-md p-2 mt-1 w-full" placeholder="Expression 5">
+                    <input type="text" id="q6_task2" class="border rounded-md p-2 mt-1 w-full" placeholder="Expression 6">
+                    <input type="text" id="q7_task2" class="border rounded-md p-2 mt-1 w-full" placeholder="Expression 7">
+                    <span id="result_task2" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task 3: Choose the correct place (a or b) for the adverb or expression of frequency. -->
+        <div id="task3" class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-orange-500">Task 3: Choose the correct place (a or b) for the adverb or expression of frequency.</h3>
+            <form id="quizForm3" class="space-y-4">
+                <div class="space-y-2">
+                    <p class="text-gray-700">1. I (a) ________ our manager deals (b) ________ with problems. It's her job. (usually)</p>
+                    <input type="text" id="q1_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result1_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">2. I (a) ________ get up early (b) ________ and go for a run. (every day)</p>
+                    <input type="text" id="q2_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result2_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">3. She's a close friend but (a) ________ we (b) ________ see each other – maybe only once a year. (rarely)</p>
+                    <input type="text" id="q3_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result3_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">4. I (a) ________ clean the house at the weekend (b) ________. I hate it when it's a mess. (always)</p>
+                    <input type="text" id="q4_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result4_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">5. I (a) ________ speak to my manager – maybe once a month. (once in a while)</p>
+                    <input type="text" id="q5_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result5_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">6. I (a) ________ work late at night because I get too tired and I can't concentrate. (never)</p>
+                    <input type="text" id="q6_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result6_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">7. We go (a) ________ out for a meal together (b) ________. (occasionally)</p>
+                    <input type="text" id="q7_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result7_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-gray-700">8. I (a) ________ wish I worked part-time because I'd love to spend (b) ________ more time with my family. (sometimes)</p>
+                    <input type="text" id="q8_task3" class="border rounded-md p-2 mt-1 w-full" placeholder="Your answer (a or b)">
+                    <span id="result8_task3" class="ml-2 text-sm text-gray-500"></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center space-x-4">
+            <button onclick="checkAnswers()" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-md shadow-md transition duration-300">Check</button>
+            <button onclick="resetAnswers()" class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-6 rounded-md shadow-md transition duration-300">Reset</button>
+        </div>
+    </div>
+
+    <!-- Explanation Section -->
+    <div id="explanations" class="max-w-4xl mx-auto mt-8 p-6 md:p-10 bg-white rounded-xl shadow-lg hidden">
+        <h3 class="text-2xl font-bold mb-4 text-orange-500">Explanations</h3>
+        <ul id="explanationList" class="text-gray-700 list-disc pl-5"></ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center mt-10">
+        <p class="text-lg md:text-xl text-gray-700">LEARN. SHARE. CONNECT</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                task1: {
+                    q1: { options: ["are", "living"], display: "Are you living..." },
+                    q2: { options: ["does", "know"], display: "Does your partner know..." },
+                    q3: { options: ["are", "listening"], display: "What song are you listening..." },
+                    q4: { options: ["do", "see"], display: "How often do you see..." },
+                    q5: { options: ["am trying"], display: "I am trying..." },
+                    q6: { options: ["stay"], display: "we usually stay..." }
+                },
+                task2: {
+                    options: ["hardly ever", "once in a while", "from time to time", "once a month", "twice a year", "every weekend", "every day"],
+                    display: "Correct order: hardly ever, once in a while, from time to time, once a month, twice a year, every weekend, every day"
+                },
+                task3: {
+                    q1: { options: ["a", "a."], display: "a (usually comes before the main verb)" },
+                    q2: { options: ["b", "b."], display: "b (at the end of the sentence)" },
+                    q3: { options: ["b", "b."], display: "b (after the main verb 'are')" },
+                    q4: { options: ["a", "a."], display: "a (always comes before the main verb)" },
+                    q5: { options: ["b", "b."], display: "b (at the end of the sentence)" },
+                    q6: { options: ["a", "a."], display: "a (never comes before the main verb)" },
+                    q7: { options: ["a", "a."], display: "a (before the verb 'go')" },
+                    q8: { options: ["a", "a."], display: "a (before the verb 'wish')" }
+                }
+            };
+
+            let allCorrect = true;
+            let wrongAnswers = [];
+            const explanationList = document.getElementById('explanationList');
+            explanationList.innerHTML = '';
+
+            // Check Task 1
+            const checkTask1 = () => {
+                for (let i = 1; i <= 6; i++) {
+                    const qData = answers.task1[`q${i}`];
+                    let inputValues = [];
+                    const input1 = document.getElementById(`q${i}_part1_task1`);
+                    const input2 = document.getElementById(`q${i}_part2_task1`);
+                    const inputSolo = document.getElementById(`q${i}_task1`);
+
+                    if (input1) {
+                        inputValues.push(input1.value.toLowerCase().trim());
+                        if (input2) {
+                            inputValues.push(input2.value.toLowerCase().trim());
+                        }
+                    } else if (inputSolo) {
+                        inputValues.push(inputSolo.value.toLowerCase().trim());
+                    }
+
+                    const resultSpan = document.getElementById(`result${i}_task1`);
+                    const isCorrect = Array.isArray(qData.options) ?
+                        (qData.options.length === 1 && inputValues[0] === qData.options[0]) ||
+                        (qData.options.length === 2 && inputValues[0] === qData.options[0] && inputValues[1] === qData.options[1]) :
+                        inputValues[0] === qData.options;
+                    
+                    const questionTextElement = document.querySelector(`#task1 > div:nth-of-type(${i}) p`);
+                    
+                    if (isCorrect) {
+                        resultSpan.textContent = '✅';
+                        resultSpan.style.color = 'green';
+                    } else {
+                        resultSpan.textContent = `❌`;
+                        resultSpan.style.color = 'red';
+                        allCorrect = false;
+                        wrongAnswers.push({
+                            question: questionTextElement ? questionTextElement.textContent.trim() : `Task 1, Question ${i}`,
+                            correctAnswer: qData.display
+                        });
+                    }
+                }
+            };
+
+            // Check Task 2
+            const checkTask2 = () => {
+                const correctOrder = answers.task2.options.map(item => item.toLowerCase());
+                const userOrder = [];
+                for (let i = 1; i <= 7; i++) {
+                    const input = document.getElementById(`q${i}_task2`);
+                    if (input) {
+                        userOrder.push(input.value.toLowerCase().trim());
+                    }
+                }
+
+                const resultSpan = document.getElementById('result_task2');
+                let isCorrect = userOrder.length === correctOrder.length;
+                for (let i = 0; i < correctOrder.length; i++) {
+                    if (userOrder[i] !== correctOrder[i]) {
+                        isCorrect = false;
+                        break;
+                    }
+                }
+
+                if (isCorrect) {
+                    resultSpan.textContent = '✅';
+                    resultSpan.style.color = 'green';
+                } else {
+                    resultSpan.textContent = `❌`;
+                    resultSpan.style.color = 'red';
+                    allCorrect = false;
+                    wrongAnswers.push({
+                        question: "Task 2: The order of the expressions of frequency",
+                        correctAnswer: answers.task2.display
+                    });
+                }
+            };
+            
+            // Check Task 3
+            const checkTask3 = () => {
+                for (let i = 1; i <= 8; i++) {
+                    const qData = answers.task3[`q${i}`];
+                    const input = document.getElementById(`q${i}_task3`);
+                    if (!input) continue;
+
+                    const inputValue = input.value.toLowerCase().trim().replace(/['`’‘?!,.]/g, '');
+                    const resultSpan = document.getElementById(`result${i}_task3`);
+                    const isCorrect = qData.options.includes(inputValue);
+                    const questionTextElement = document.querySelector(`#task3 > div:nth-of-type(${i}) p`);
+
+
+                    if (isCorrect) {
+                        resultSpan.textContent = '✅';
+                        resultSpan.style.color = 'green';
+                    } else {
+                        resultSpan.textContent = `❌`;
+                        resultSpan.style.color = 'red';
+                        allCorrect = false;
+                        wrongAnswers.push({
+                            question: questionTextElement ? questionTextElement.textContent.trim() : `Task 3, Question ${i}`,
+                            correctAnswer: qData.display
+                        });
+                    }
+                }
+            };
+
+            checkTask1();
+            checkTask2();
+            checkTask3();
+
+            const explanationsDiv = document.getElementById('explanations');
+            if (allCorrect) {
+                explanationsDiv.classList.add('hidden');
+            } else {
+                explanationsDiv.classList.remove('hidden');
+                wrongAnswers.forEach(item => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `Task: ${item.question} - Correct Answer: ${item.correctAnswer}`;
+                    explanationList.appendChild(listItem);
+                });
+            }
+        }
+
+        function resetAnswers() {
+            const inputs = document.querySelectorAll('input, select');
+            inputs.forEach(input => {
+                input.value = '';
+            });
+            const spans = document.querySelectorAll('span[id^="result"]');
+            spans.forEach(span => {
+                span.textContent = '';
+                span.style.color = '';
+            });
+
+            document.getElementById('explanations').classList.add('hidden');
+            document.getElementById('explanationList').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
